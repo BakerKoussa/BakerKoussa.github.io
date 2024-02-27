@@ -9,6 +9,7 @@
     z-index: 10;
   }
 
+
   @media (max-width: 667px) {
     .whatsapp-chat {
         position: fixed;
@@ -16,7 +17,25 @@
         bottom: 80px;
         z-index: 10;
       }
+      .theRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
   }
+
+  @media (min-width: 667px) {
+
+     .theRow {
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px
+  } 
+}
   
   .whatsapp-chat-image {
     width: 60px;
@@ -24,3 +43,12 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .img-circle {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  
